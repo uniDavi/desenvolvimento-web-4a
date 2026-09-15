@@ -23,19 +23,11 @@ private Integer id;
 
 
 private String nome;
-
 private String descricao;
-
 private Short estoque;
-
 private BigDecimal preco;
 
 @ManyToOne
 private Categorias categoria;
-
-
-
-
-
 
 }
