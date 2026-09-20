@@ -10,11 +10,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
-
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
+
 public class Itempedido {
 
 @Id
@@ -23,12 +28,13 @@ public class Itempedido {
 
 private Integer id;
 private Integer quantidade;
-private BigDecimal ValorUnitario;
-private Short estoque;
-private BigDecimal preco;
+private BigDecimal valorUnitario;
+
 
 @ManyToOne
 private Pedido pedido;
+
+@ManyToOne
 private Produto produto;
 
 

@@ -8,11 +8,14 @@ import jakarta.persistence.Id;
 
 import lombok.Getter;
 import lombok.Setter;
-
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Entity
-@Getter 
-@Setter 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Cliente {
 
 @Id
