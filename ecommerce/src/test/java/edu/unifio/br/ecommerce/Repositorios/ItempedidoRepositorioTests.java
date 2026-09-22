@@ -30,7 +30,7 @@ public class ItempedidoRepositorioTests {
         assertNotNull(item);
         assertEquals(1, item.getQuantidade());
         assertEquals(0, new BigDecimal("73.44").compareTo(item.getValorUnitario()));
-        // relacionamentos: item 1 pertence ao produto "codigo limpo" e ao pedido 1
+       
         assertEquals("codigo limpo", item.getProduto().getNome());
         assertEquals("CONCLUIDO", item.getPedido().getStatus());
     }

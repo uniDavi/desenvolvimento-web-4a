@@ -39,7 +39,7 @@ public class PagamentoRepositorioTests {
         assertNotNull(pagamentos);
         assertEquals(5, pagamentos.size());
 
-        // relacionamento: pagamento pendente (id 4) está ligado ao pedido também pendente
+        
         Pagamento pendente = pagamentos.stream()
                 .filter(p -> p.getStatus().equals("PENDENTE"))
                 .findFirst()

@@ -30,7 +30,7 @@ public class ProdutoRepositorioTests {
         assertNotNull(produto);
         assertEquals("codigo limpo", produto.getNome());
         assertEquals(0, new BigDecimal("73.44").compareTo(produto.getPreco()));
-        // relacionamento: produto 1 pertence a categoria "Livros"
+        
         assertEquals("Livros", produto.getCategoria().getNome());
     }
 

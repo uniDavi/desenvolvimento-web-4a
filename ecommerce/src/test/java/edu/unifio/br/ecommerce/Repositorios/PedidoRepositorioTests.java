@@ -29,7 +29,7 @@ public class PedidoRepositorioTests {
         assertNotNull(pedido);
         assertEquals("CONCLUIDO", pedido.getStatus());
         assertEquals(0, new BigDecimal("73.44").compareTo(pedido.getValorTotal()));
-        // relacionamento: pedido 1 pertence ao cliente "Maria Silva"
+        
         assertEquals("Maria Silva", pedido.getCliente().getNome());
     }
 
